@@ -11,7 +11,7 @@
 
         gtag('config', 'G-GH7EH3HJCD');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="author" content="Nikhil Sourav">
     <meta name="description"
@@ -25,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
@@ -58,7 +60,7 @@
 
     <!-- Start Home -->
     <section class="home" id="home">
-        <div class="container">
+        <div class="container" data-aos="fade-right" data-aos-duration="1000">
             <span>with pranav thakur</span>
             <h1>Build perfect body </h1>
             <h1>shape for good and </h1>
@@ -76,7 +78,7 @@
     <!-- End Home -->
 
     <!-- Start About -->
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-up" data-aos-duration="1000">
         <div class="container about-container">
             <img src="images/About-1.webp" alt="about" class="about-img" width="400px">
             <div class="about-text">
@@ -97,7 +99,7 @@
     <!-- End About -->
 
     <!-- Start Services -->
-    <section class="services" id="services">
+    <section class="services" id="services" data-aos="fade-up" data-aos-duration="1000">
         <div class="container services-container">
             <span>Our Services</span>
             <div class="service-flex">
@@ -128,7 +130,7 @@
     <!-- End Services -->
 
     <!-- Start Pricing -->
-    <div class="pricing-table" id="price">
+    <div class="pricing-table" id="price" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <span>Pricing</span>
             <div class="pricing-flex">
@@ -219,6 +221,8 @@
         target="_blank" class="animated-btn"><i class="fab fa-whatsapp"></i></a>
     <!-- End Animated Btn -->
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -234,6 +238,8 @@
             header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         });
+        // AOS
+        AOS.init();
     </script>
 </body>
 
