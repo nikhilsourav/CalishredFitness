@@ -374,7 +374,7 @@ header .hamburger.active span:nth-child(3) {
   padding-top: 30px;
 }
 .about-text p {
-  word-spacing: 5px;
+  word-spacing: 2px;
   line-height: 1.3;
   padding-top: 30px;
   font-size: 0.9em;
