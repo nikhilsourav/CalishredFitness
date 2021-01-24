@@ -168,6 +168,19 @@
     </div>
     <!-- End Pricing -->
 
+    <!-- Start Maps -->
+    <div class="maps" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container maps-heading">
+            <span>Find us</span>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.4660358530964!2d85.28160041480693!3d23.335124684795833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1b67a26c3dd%3A0x73f51ef58a1917be!2sCalishred!5e0!3m2!1sen!2sin!4v1611470004813!5m2!1sen!2sin"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
+        </iframe>
+    </div>
+    <!-- End Maps -->
+
     <!-- Start Footer -->
     <footer class="footer">
         <ul class="container footer-container">
@@ -242,6 +255,19 @@
         });
         // AOS
         AOS.init();
+        // remove AOS on mobile
+        // $(document).ready(function () {
+        //     AOS.init({
+        //         disable: function () {
+        //             const maxWidth = 800;
+        //             return window.innerWidth < maxWidth;
+        //         },
+        //     });
+        // });
+        // Fix not loading 
+        $(window).on("load", function () {
+            AOS.refresh();
+        });
     </script>
 </body>
 

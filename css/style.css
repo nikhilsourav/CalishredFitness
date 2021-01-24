@@ -572,6 +572,40 @@ header .hamburger.active span:nth-child(3) {
 
 /*
    *********
+    *Start Maps*
+   *********
+*/
+.maps {
+  margin-bottom: 100px;
+}
+.maps-heading {
+  margin-bottom: 50px;
+}
+.maps span {
+  color: var(--darkBlue);
+  text-transform: uppercase;
+  font-size: 1.85em;
+}
+.maps span::before {
+  content: "";
+  display: inline-block;
+  border-top: 2px solid var(--darkBlue);
+  margin: 0 2em 0 0;
+  width: 60px;
+  height: 2px;
+  transform: translateY(-5px);
+}
+.maps iframe {
+  box-shadow: 1px 1px 50px rgba(0,0,0,0.2);
+}
+/*
+   *********
+    *End Maps*
+   *********
+*/
+
+/*
+   *********
     *Start Footer*
    *********
 */
@@ -859,6 +893,9 @@ header .hamburger.active span:nth-child(3) {
 @media screen and (max-width: 480px) {
   body {
     font-size: 12px;
+  }
+  .home {
+    background-attachment: scroll;
   }
   .home h1 {
     font-size: 2em;
